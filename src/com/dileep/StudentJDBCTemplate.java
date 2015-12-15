@@ -28,7 +28,7 @@ public class StudentJDBCTemplate implements StudentDAO {
 			jdbcTemplateObject.update(SQL3, sid, marks, year);
 
 			System.out.println("Created Name = " + name + ", Age = " + age);
-//			throw new RuntimeException("simulate Error condition");
+			// throw new RuntimeException("simulate Error condition");
 
 		} catch (DataAccessException e) {
 			System.out.println("Error in creating record, rolling back");
